@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.people {
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  grid-template-columns: repeat(2, 200px);
+  padding: 30px 35px 155px;
+  display: grid;
+}
+
+.person {
+  width: 200px;
+}
+
+.person:hover .extra {
+  opacity: 1;
+}
+
+.photo {
+  position: relative;
+}
+
+.photo__people {
+  border-radius: 200px;
+  width: 200px;
+  height: auto;
+  display: block;
+}
+
+.photo__rank {
+  color: #8b0000;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  line-height: 32px;
+  position: absolute;
+  top: 84px;
+  left: 158px;
+}
+
+.details {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.details__name {
+  color: #2f4f4f;
+}
+
+.extra {
+  opacity: 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.extra__sport:after {
+  content: ",";
+}
+
+.extra__pay:before {
+  content: "$";
+}
+
+.extra__pay:after {
+  content: "M";
+}
+
+@media (width >= 750px) {
+  .people {
+    padding: 30px 160px 155px;
+  }
+}
+
+@media (width >= 1000px) {
+  .people {
+    grid-template-columns: repeat(4, 200px);
+    padding: 30px 55px 197px;
+  }
+}
+
+@media (width >= 1500px) {
+  .people {
+    padding: 30px 305px 197px;
+  }
+}
+/*# sourceMappingURL=jun_25_tovstopiatyi_maksym.b1276d39.css.map */
